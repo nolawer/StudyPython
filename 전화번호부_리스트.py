@@ -6,6 +6,63 @@
 
 phoneList = [{'name': 'aaa', 'num': '111'},{'name': 'bbb', 'num': '222'}, {'name': 'ccc', 'num': '333'}, {'name': 'aaa', 'num': '444'}] # 리스트로 구현
 
+# 1. 전화번호 추가 함수
+def phonebookAppend():
+    name_append = input("@ 이름 : ")
+    num_append = input("@ 전화번호 : ")
+    phoneList.append({'name': name_append, 'num': num_append})
+    print("{}:{}입력이 완료 되었습니다.".format(name_append, num_append))
+    print(phoneList)
+
+# 2. 전화번호 검색 함수
+def phonebookSearch():
+    print("검색할 이름을 입력해주세요.")
+    name_find = input("@ 이름 : ")
+
+    f_check = 0
+
+    for i in range(0, len(phoneList)):
+
+        if name_find == phoneList[i]['name']:
+            print("이름 : ", phoneList[i]['name'])
+            print("전화번호 : ", phoneList[i]['num'])
+            print("==============")
+            f_check = + 1
+        else:
+            pass
+
+    if f_check == 0:
+        print("검색한 이름이 전화본호부에 없습니다.")
+    else:
+        pass
+
+# 3. 전화번호 삭제 함수
+def phonebookDelete():
+    print("삭제할 이름과 전화번호를 입력해주세요.")
+    name_del = input("@ 이름 : ")
+    num_del = input("@ 전화번호 : ")
+
+    del_chek = 0
+
+    data_range = len(phoneList)
+
+    for i in range(0, data_range):
+        if i < data_range:
+            if name_del == phoneList[i]['name'] and num_del == phoneList[i]['num']:
+                print("{}:{}를 삭제했습니다.".format(phoneList[i]['name'], phoneList[i]['num']))
+                del phoneList[i]
+                del_chek = + 1
+            else:
+                pass
+        else:
+            pass
+
+    if del_chek == 0:
+        print("입력하신 정보와 일치하는 내역이 없습니다.")
+    else:
+        pass
+
+
 while True:
     print("===============")
     print("1.전화번호 추가")
@@ -29,58 +86,15 @@ while True:
 
     # 1.전화번호 추가
     if ft_num == 1:
-        name_append = input("@ 이름 : ")
-        num_append = input("@ 전화번호 : ")
-        phoneList.append({'name' : name_append, 'num' : num_append})
-        print("{}:{}입력이 완료 되었습니다.".format(name_append, num_append))
+       phonebookAppend()
 
     # 2.전화번호 검색
     elif ft_num == 2:
-        print("검색할 이름을 입력해주세요.")
-        name_find = input("@ 이름 : ")
-
-        f_check = 0
-
-        for i in range(0, len(phoneList)):
-
-            if name_find == phoneList[i]['name']:
-                 print("이름 : ", phoneList[i]['name'])
-                 print("전화번호 : ", phoneList[i]['num'])
-                 print("==============")
-                 f_check =+ 1
-            else:
-                pass
-
-        if f_check == 0:
-            print("검색한 이름이 전화본호부에 없습니다.")
-        else:
-            pass
+        phonebookSearch()
 
     # 3.전화번호 삭제
     elif ft_num == 3:
-        print("삭제할 이름과 전화번호를 입력해주세요.")
-        name_del = input("@ 이름 : ")
-        num_del = input("@ 전화번호 : ")
-
-        del_chek = 0
-
-        data_range = len(phoneList)
-
-        for i in range(0, data_range):
-            if i < data_range-1:
-                if name_del == phoneList[i]['name'] and num_del == phoneList[i]['num']:
-                    print("{}:{}를 삭제했습니다.".format(phoneList[i]['name'], phoneList[i]['num']))
-                    del phoneList[i]
-                    del_chek =+ 1
-                else:
-                    pass
-            else:
-                pass
-
-        if del_chek == 0:
-            print("입력하신 정보와 일치하는 내역이 없습니다.")
-        else:
-            pass
+        phonebookDelete()
 
     # 4. 전화번호 전체출력
     elif ft_num == 4:
