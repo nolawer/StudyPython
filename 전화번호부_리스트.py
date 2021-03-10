@@ -51,7 +51,8 @@ def phonebookDelete():
             if name_del == phoneList[i]['name'] and num_del == phoneList[i]['num']:
                 print("{}:{}를 삭제했습니다.".format(phoneList[i]['name'], phoneList[i]['num']))
                 del phoneList[i]
-                del_chek = + 1
+                del_chek += 1
+                data_range -= 1
             else:
                 pass
         else:
