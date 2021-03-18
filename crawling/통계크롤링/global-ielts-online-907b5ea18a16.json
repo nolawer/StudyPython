@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "global-ielts-online",
+  "private_key_id": "907b5ea18a16feaaf8e8009ad8b1fba1e0832076",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCatgD19/vqAu91\nCqAWvu9jDpFzolneqA5iLSoETBDmzZf0HFD0aaqZIblFDOFjyc7/J6mcj5O9Go6l\nFgrHCoN9aFN4rh0mOhsXvrUVotB9y6vJcnJfUIvYJryxiGYfDJrM0fvN2h0Y5TS4\nHgHbkiAWH72uYbC6qZrtgAB+SczCElswsens9PZbIqHOg7oWnroVpMeJpdgPcBmM\na2gsWS2KhZYjDc53UoaTMzcc3dju8yF90lv1p/usixXiZWcMaSn0OqZtTcu48a4s\nRSMQRo9ekf/RI/bb6st6N8kw8+Z3ykP0Ig2yPqwYyPOvMvWFMUq6uzWzSLWT92AO\n0cqIUUtPAgMBAAECggEACmpOTkDPmMVx0XNRq7ZW71g/uoUnf7HYpgtcVMW6LY+R\nt0FgwdOLRJvcmSVw1wLzCIJnDL8ttwFesQZ220d96qdnVyyBkd0/ja2tCzPWzWE0\nw28M/BW0FG0nLtx744M5uKg6R3VzmAV2Mx7yCRIhTtv8LQ0ulKJuZ6bCYb4eJsJy\nvXaG9ebbRnbryFDyIaDnIP/hec4MvjdnjSpRJslRf3VSlmibIW7QzFF6ItX97w2U\nr6a1CPPrnQaQ4mmjNJvSO9meUMquCQxIU4K4GCgwqqFfA7V/r3eBHnNMkHuSJyjx\nysE5gQPzAJD5F2KNiugb7qdKazOs+0jQCcqYeGc9AQKBgQDVEYXe68QZUDKXd6O1\nIEBKkfZb+XmZlYTPETzzKprc1FQQbOKm2TFoiWRT7YeT0M/Tv6swAlGNYLRIDWnO\n1LnFSDh/xwVneI41ZBofqOMueaXTzizm17H7Bd7ocGAZw59L9LQ5l3/z+Vwc0CWn\nNPB7qzQBM3x42Lhz0/9jX1vZ7wKBgQC54kowz6Y8H+5JDJAJdHO+jFOHFaeSA8ZJ\nDjiI5yQwLGXbXrdAGfRtACkHmwV03lcTamb1Mi4Del0TZ0m3a3+mJD3n2CATRDMd\n0B1XuCP4DllklHVbZB+2z4k18YqYUvkDY0lf7Wb8j4czsDCHycZUljAbhT8c/q5e\nCXcPBbKEoQKBgESIll7VxwW9XgiKWwXvkb5qpKuA2zQje8x+5vPwSE+vnDqMS3sP\ncW0GhFbamDlbeP3LMO0IUeL/r/1dEyOMGRTz3fh7s6lMhbF2uVBlqm1Qg55VOuwl\nhQIRKVnqi36+BYcQ9sdvi6CWHKLH8NSPmqqsrtWUEf1s+CeJkSQNkCXRAoGAZeaG\nk2GSGM3MXCFV6Mj9Fo1o0NnvJd2J2sy/81T7AqmkIPE4dhyEYSjAVVoHULz+cTdY\nP7yFewSed5+cyr9Ul+iwQyO42bb+aq6HF2pr1XVQThIQj8xAkoANERRbzQtXVSMd\nu0eyuGuaS5yfziCv5/j5YGzYX3XCcuyvZv3RkmECgYEAsrGkpBFAklNqwwvm89gh\n+vxcC7cYPtdygv08QIl7mqoJclp/Ooh5UUTfFXqj1orffRQKYHu/Mc6/WmZiBlh+\njHwIjf9fe3KO8crG9HTDAfs0nGJC7nc4Nk7g3fI57SvFynN/qmIhzWaPER/xYduL\nlfxfdQOmV2oZfLljCJXbDck=\n-----END PRIVATE KEY-----\n",
+  "client_email": "analytics-search-bot@global-ielts-online.iam.gserviceaccount.com",
+  "client_id": "103067161753732266839",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/analytics-search-bot%40global-ielts-online.iam.gserviceaccount.com"
+}

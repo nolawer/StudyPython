@@ -58,10 +58,10 @@ def get_results(service, profile_id):
     # Use the Analytics Service Object to query the Core Reporting API
     # for the number of sessions within the past seven days.
     return service.data().ga().get(
-            ids='ga:' + profile_id,
+            ids='통계크롤링:' + profile_id,
             start_date='7daysAgo',
             end_date='today',
-            metrics='ga:sessions').execute()
+            metrics='통계크롤링:sessions').execute()
 
 
 def print_results(results):
@@ -80,7 +80,7 @@ def main():
 
     # Authenticate and construct service.
     service = get_service(
-            api_name='analytics',
+            api_name='통계크롤링',
             api_version='v3',
             scopes=[scope],
             key_file_location=key_file_location)
