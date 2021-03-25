@@ -2,6 +2,7 @@ from analytics import * # 구글 애널리틱스/광고 연동 함수(파일명 
 from gioadmin import * # GIO 어드민 크롤링 함수(파일명 : gioadmin.py)
 # from googlesheet import * # 구글 시트 연동 함수(파일명 : googlesheet.py)
 import gspread # 구글 스프레시트
+# import pygsheets # 구글 스프레시트
 from oauth2client.service_account import ServiceAccountCredentials # 구글 스프레시트 연동
 from datetime import datetime
 
@@ -142,16 +143,21 @@ for i in range(int(sd_input), int(ed_input)+1):
 
 print("clicks 결과값 : ", ads_clicks_value)
 
-quit()
-
 # 일별 노출 수
-ads_impressions_data = get_results('impressions', 'adwordsAdGroupID', str(start_date), str(end_date))
-print("노출수")
-print(ads_impressions_data)
-print('\n\n\n')
+ads_impressions_value = {}
 
+for i in range(int(sd_input), int(ed_input)+1):
+    # 입력받은 스트링을 날짜 형식으로 변환(2021-03-31)
+    start_date = datetime.strptime(str(i), "%Y%m%d").date()
 
+    ads_impressions_data = get_results('impressions', 'adwordsAdGroupID', str(start_date), str(start_date))
 
+    # print(ads_impressions_data)
+
+    ads_impressions_data_result = ads_impressions_data['totalsForAllResults']  # ads_impression_data 중 totalsForAllResults 딕셔너리를 받아옴
+    ads_impressions_value[i] = ads_impressions_data_result.get('ga:impressions')  # 위 딕셔너리 중 value를 받아옴
+
+print("impressions 결과값 : ", ads_impressions_value)
 
 # Google 스프레시트 연동 ===============
 
@@ -163,8 +169,10 @@ spreadsheet_url = 'https://docs.google.com/spreadsheets/d/1-Qy11dtRjGZ_gb9QlEiBA
 
 # 문서 불러오기
 doc = gc.open_by_url(spreadsheet_url)
-# a 시트 불러오기
-worksheet = doc.worksheet('통계(21/03월)')
+# 시트 불러오기
+worksheet = doc.worksheet('통계(21/03월)테스트')
+
+worksheet.insert_row(['1234', '3456'],4)
 
 cell_data = worksheet.acell('B2').value
 

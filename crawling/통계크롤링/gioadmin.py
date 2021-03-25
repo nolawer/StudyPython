@@ -10,8 +10,8 @@ def adminCrwling(sd_input, ed_input):
     # 헤드리스 모드
     opt = webdriver.ChromeOptions()
     opt.add_argument("headless")
-    #browser = webdriver.Chrome("./chromedriver_win.exe", options=opt) # 윈도우
-    browser = webdriver.Chrome("../chromedriver_mac", options=opt) # 맥
+    browser = webdriver.Chrome("./chromedriver_win.exe", options=opt) # 윈도우
+    # browser = webdriver.Chrome("../chromedriver_mac", options=opt) # 맥
 
     # 일반모드
     # options = Options()
