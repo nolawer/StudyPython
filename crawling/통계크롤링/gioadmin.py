@@ -10,8 +10,8 @@ def adminCrwling(sd_input, ed_input):
     # 헤드리스 모드
     opt = webdriver.ChromeOptions()
     opt.add_argument("headless")
-    browser = webdriver.Chrome("./chromedriver_win.exe", options=opt) # 윈도우
-    # browser = webdriver.Chrome("../chromedriver_mac", options=opt) # 맥
+    # browser = webdriver.Chrome("./chromedriver_win.exe", options=opt) # 윈도우
+    browser = webdriver.Chrome("../chromedriver_mac", options=opt) # 맥
 
     # 일반모드
     # options = Options()
@@ -114,7 +114,7 @@ def adminCrwling(sd_input, ed_input):
 
         # 일자별 결과값 정리
 
-        daily_result[f] = [india_count, vietnam_count, indonesia_count, philippines_count, bangladesh_count, etc_count, examtakeList[-1], examcompleteList[-1]]
+        daily_result[f] = [india_count, vietnam_count, indonesia_count, bangladesh_count, philippines_count, etc_count, examtakeList[-1], examcompleteList[-1]]
 
     browser.close()
 
