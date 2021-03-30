@@ -182,7 +182,7 @@ gs_ed_date = datetime.strptime(ed_input, "%Y%m%d").date()
 
 
 k = int(ed_input) - int(sd_input) + 1 # 시작일과 종료일의 일수 차이
-r = int(sd_input[-1]) + 3 # 추가할 행 : 일자의 마지막  + 2
+r = int(sd_input[6:]) + 3 # 추가할 행 : 일자의 마지막  + 2
 
 for i in range(0,k):
     sday_result = int(sd_input) + i # 날짜 : 시작일에서 하루씩 증가
