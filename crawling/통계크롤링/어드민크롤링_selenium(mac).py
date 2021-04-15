@@ -15,7 +15,7 @@ browser = webdriver.Chrome("../chromedriver_mac", options=opt) # 맥
 # browser = webdriver.Chrome('./chromedriver_mac.exe', chrome_options=options)
 # browser = webdriver.Chrome('./chromedriver_mac.exe') # 윈도우
 # browser = webdriver.Chrome('./chromedriver_mac') # 맥
-# browser.maxmize_window()
+# browser.maximize_window()
 
 browser.implicitly_wait(5) # 브라우저가 로딩될때까지 최소 5초 기다
 

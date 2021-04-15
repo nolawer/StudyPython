@@ -39,23 +39,3 @@ html = browser.page_source
 soup = BeautifulSoup(html, "html.parser")
 
 print(soup)
-
-# user_total_data_select = browser.find_element_by_css_selector('#ID-layout-2 > table > tbody > tr.ID-row-0-0-0._GAMK > td:nth-child(2)')
-# print(user_total_data_select)
-
-
-
-# test = soup.select("div.issue_area")
-#
-# for i in test:
-#     print(i.text)
-# print(test)
-
-# user_total = browser.find_element_by_css_selector("#ID-layout-2 > table > tbody > tr.ID-row-0-0-0._GAMK > td:nth-child(2)")
-
-# user_total_data_select = soup.select_one("#ID-layout-2 > table > tbody > tr.ID-row-0-0-0._GAMK > td:nth-child(2)")
-
-# print(user_total.text)
-
-# for i in user_total_data_select:
-#     print(i.string)
