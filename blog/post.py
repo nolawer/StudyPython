@@ -34,5 +34,3 @@ class Post:
 if __name__ == "__main__":
     post = Post(1, "title1", "content1", 0)
     print(f"{post.get_id()} {post.get_title()}")
-    
-    
